@@ -1,0 +1,45 @@
+ /**
+   * @title ContractName
+   * @dev ContractDescription
+   * @custom:dev-run-script file_p
+   
+   contract ContractName {enum.sol} **/
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+contract StatusoftheOrder
+{
+    enum Status
+    {
+        None,
+        Pending,
+        Shipped,
+        Completed,
+        Rejected,
+        Canceled
+    }
+    Status public status;
+
+    function get() external view returns (Status)
+    {
+        return status;
+    }
+    
+    function set(Status _status) external
+    {
+        status = Status.Canceled;
+    }
+    
+    function reject() external
+    {
+        status = Status.Rejected;
+    }
+    
+    function shhipping() external
+    {
+        status = Status.Shipped;
+    }
+    function reset() public
+    {
+        delete status;
+    }
+}
