@@ -1,0 +1,86 @@
+{
+  "accounts": {
+    "account{0}": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1675719144216,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0xdeeada142b8b7e7927154c0050025ca1a0d9ec19c6626950bc47aace25f1436a",
+        "contractName": "StateVariables",
+        "bytecode": "608060405234801561001057600080fd5b5061023f806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80633798237f1461005c5780636bf789031461007a5780638aee0af314610098578063b871d719146100b4578063f0c8acc2146100d2575b600080fd5b6100646100dc565b604051610071919061012d565b60405180910390f35b6100826100f2565b60405161008f919061012d565b60405180910390f35b6100b260048036038101906100ad9190610179565b6100f8565b005b6100bc610102565b6040516100c9919061012d565b60405180910390f35b6100da61010b565b005b600060016000546100ed91906101d5565b905090565b60005481565b8060008190555050565b60008054905090565b60008081905550565b6000819050919050565b61012781610114565b82525050565b6000602082019050610142600083018461011e565b92915050565b600080fd5b61015681610114565b811461016157600080fd5b50565b6000813590506101738161014d565b92915050565b60006020828403121561018f5761018e610148565b5b600061019d84828501610164565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60006101e082610114565b91506101eb83610114565b9250828201905080821115610203576102026101a6565b5b9291505056fea26469706673582212200b48574731a2df30bbc604d1feb2d05209470982173ecc4d53d402c9292be27a64736f6c63430008120033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    }
+  ],
+  "abis": {
+    "0xdeeada142b8b7e7927154c0050025ca1a0d9ec19c6626950bc47aace25f1436a": [
+      {
+        "inputs": [],
+        "name": "resetMynumber",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_mynumber",
+            "type": "uint256"
+          }
+        ],
+        "name": "setMynumber",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getMynumber",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getMynumberplusone",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "mynumber",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
+}
